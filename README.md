@@ -23,7 +23,7 @@ and this:
     }
 ```
 
-
+Let's see if we can check how much the balance is and disable the _vaultOnly so we can manipulate the other functions
 ```
     function transfer(address to, uint256 value) external override returns (bool) {
         require(to != address(0) || to != address(this));
@@ -37,6 +37,6 @@ and this:
         return true;
     }
     function echidna_test_balance() public view returns (bool) {
-        return balances[echidna_caller] < 10000 && _vaultOnly = disabled;
+        return balances  < 10000 && _vaultOnly = disabled;
     }
 ```
